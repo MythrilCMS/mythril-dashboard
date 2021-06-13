@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>MythriCMS</title>
+
+    <link rel="preload" href="css/preloader.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/animate.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/mini-default.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/default-colors.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/vars.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/icons.css" as="style" onload="this.rel='stylesheet'">
+
+    <!-- Fonts -->
+    <link rel="preconnect" as="font" type="font/woff2" href="https://fonts.gstatic.com" crossorigin="true">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" onload="this.rel='stylesheet'">
+
+    <script src="js/amdlite.js"></script>
+
+</head>
+<body>
+
+    <div class="animate__animated loading-screen row">
+        <div class="loader-wrapper">
+            <div class="loader">
+                <div class="indeterminate"></div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-wrapper row">
+                <div class="loading-icon content col-sm-12">
+                    <div class="icon spinner primary"></div>
+                </div>
+                <div class="content col-sm-12">
+                    <h1>MythrilCMS</h1>
+                </div>
+                <div class="content col-sm-12">
+                    <h6>Loading...</h6>
+                </div>
+                <div class="tip content col-sm-12">
+                    <small>
+                        <b>Tip</b>: Never ever use jQuery. It is very very slow
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mythrilcms-app" class="row col-sm-12">
+        <fab :type="'bar'"></fab>
+
+        <div class="content-wrapper row col-sm-12">
+
+            <sidebar :categories="sidebar.categories" :site="site" :user="user"></sidebar>
+
+            <div id="content" class="main-content col-sm-12 col-md-10">
+
+                <navbar :page="current_page"></navbar>
+                <div class="container">
+
+                    <page-breadcrumb
+                        :site="site"
+                        ></page-breadcrumb>
+
+                    <danger-alert-box
+                        :title="'Error'"
+                        :msg="'An error has occured'"
+                        ></danger-alert-box>
+
+                    <info-alert-box
+                        :title="'Info'"
+                        :msg="'Nightly beta update is available. Update now?'"
+                        ></info-alert-box>
+
+                    <success-alert-box
+                        :title="'Success'"
+                        :msg="'All changes are saved!'"
+                        ></success-alert-box>
+
+                    <warning-alert-box
+                        :title="'System Warning'"
+                        :msg="'There are 5 security issues. Fix it immediately'"
+                        ></warning-alert-box>
+
+                    <welcome-card
+                        :user="user"
+                        ></welcome-card>
+
+                    <today-site-health
+                        :stats_data="overall_stats"
+                        ></today-site-health>
+
+                    <div class="row" style="margin-top: 1.5em; padding-top: 1em;">
+                        <div class="shadowed responsive-padding responsive-margin col-sm-12 col-md-4" style="background: var(--white-1-100)">
+                            <chart :config="charts.overview.data"></chart>
+
+                        </div>
+                        <div class="shadowed responsive-padding responsive-margin col-sm-12 col-md-6" style="background: var(--white-1-100)">
+                            <h5>
+                                <span class="icon-chevron-right"></span>Issues
+                            </h5>
+                            <h5>
+                                <span class="icon-chevron-right"></span>Tips & Suggestions
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <fab-sp-screen-toolbar :options="fabToolbar.options"></fab-sp-screen-toolbar>
+        <fab-modals-area :data="fabToolbar"></fab-modals-area>
+    </div>
+
+
+    <script defer src="js/app.js"></script>
+</body>
+</html>
