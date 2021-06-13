@@ -1,0 +1,304 @@
+/**
+*  MYTHRILCMS - Official Default Theme
+*/
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+#mythrilcms-app {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/** ##### NAVBAR ##### **/
+.navbar {
+    background: var(--black-2);
+    color: white;
+}
+.navbar.container {
+    padding: 1em 0 1em 1em;
+}
+.navbar .menu-shortcuts {
+   /* background: red; */
+}
+.navbar .menu-shortcuts .icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.navbar .menu-shortcuts .icon .count{
+    background: var(--red-1);
+    color: #f8f8ff;
+    padding: 0 .25em;
+    margin: 0 0 .45em 0
+}
+.navbar .menu-shortcuts .icon .count small{
+    padding: 0;
+    margin: 0;
+}
+
+
+/** ##### SIDEBAR ##### **/
+.sidebar {
+    background: var(--black-2-600);
+    color: white;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-x: scroll;
+}
+.sidebar::-webkit-scrollbar {
+  height: .1em;
+  width: .25em;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--black-2-400);
+}
+.sidebar .logo {
+    height: var(--fit);
+    border-bottom: 1px solid var(--white-1-500);
+}
+.sidebar .profile-overview {
+    margin: 1em 0 1em 0;
+}
+.sidebar .profile-overview .wrapper.details {
+    padding: .1em .1em;
+}
+.sidebar .profile-overview .wrapper.details .role {
+   display: block;
+}
+.sidebar .profile-overview .wrapper.details .name {
+    font-weight: 500;
+}
+.sidebar .profile-overview .wrapper.pic {
+    display: flex;
+    justify-content: center;
+}
+.sidebar .profile-overview .wrapper.pic .img {
+   max-height: 2em;
+   width: 2em;
+   border-radius: 50%;
+   border: 2px solid white;
+}
+.sidebar .category {
+    margin: 0 0 .25em 0;
+}
+.sidebar .category .item:not(:first-child):hover {
+    background: var(--black-2-400);
+}
+.sidebar .category .item:nth-child(1){
+    margin: 0 0 1em 0;
+}
+.sidebar .category .item:not(:first-child){
+    padding: .5em 1em .5em .25em;
+}
+.sidebar .category .item:not(:first-child) .info {
+    opacity: 0;
+    position: absolute;
+    background: var(--black-2-800);
+    padding: 1em .5em;
+    transition-duration: .25s;
+}
+.sidebar .category .item:not(:first-child) .info .title {
+    display: block;
+    margin: 0 0 1em 0;
+}
+.sidebar .category .item:not(:first-child) .info .status{
+    display: block;
+    margin: 1em 0 0 0;
+}
+.sidebar .category .item:not(:first-child):hover .info {
+    opacity: 1;
+}
+
+
+/** ##### MAIN CONTENT ##### **/
+.main-content {
+    background: var(--white-2-100);
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+
+/** ##### BREADCRUMB ##### **/
+.breadcrumb-wrapper {
+    padding: 1em .5em .5em 0;
+    margin-bottom: 1.25em;
+}
+.breadcrumb-wrapper .content ul {
+    padding-left: .20em;
+}
+.breadcrumb-wrapper .content ul li {
+    display: inline-block;
+}
+.breadcrumb-wrapper .content ul li .link:hover{
+    color: var(--blue-1-500);
+}
+.breadcrumb-wrapper .content ul li .link.current {
+    text-decoration: underline;
+}
+.breadcrumb-wrapper .content ul li .link:not(.current){
+    color: var(--blue-1-500);
+}
+
+/** ##### ALERT MESSAGES ##### **/
+.alert-message {
+    margin-bottom: .25em;
+}
+.alert-message .content{
+    padding: .75em .75em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.alert-message .content > ::selection {
+    color: #f8f8ff;
+}
+.alert-message.info .content{
+    background: var(--blue-2-500);
+    color: #f8f8ff;
+}
+.alert-message.danger .content{
+    background: var(--red-2-500);
+    color: #f8f8ff;
+}
+.alert-message.success .content {
+    background: var(--green-2-500);
+    color: #f8f8ff;
+}
+.alert-message.warning .content {
+    background: var(--yellow-2-500);
+    color: #f8f8ff;
+}
+.alert-message .title {
+    font-weight: 700;
+}
+.alert-message .close-btn {
+    text-align: right;
+}
+
+
+/** ##### WELCOME CARD ##### **/
+.welcome-card {
+    margin: 1em 0;
+}
+.welcome-card .content {
+    background: var(--white-1-100);
+    padding: 1em;
+}
+.welcome-card .content .head {
+    margin-bottom: 1.25em;
+}
+.welcome-card .content p:not(:last-child) {
+    line-height: 1em;
+    margin-bottom: 0;
+}
+
+
+/** ##### FLOATING ACTION BUTTONS ##### **/
+.float-act-btn-wrapper {
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+}
+.float-act-bar-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.float-act-bar-wrapper .content{
+    color: white;
+    padding: .5em .5em .5em 1em;
+    background: var(--black-2);
+    border-top-left-radius: 1em;
+}
+.float-act-btn-wrapper .icon {
+    padding: .75em;
+    background: var(--teal-1-600);
+    z-index: 5;
+}
+
+.float-act-btn-wrapper .options{
+    padding: .5em;
+    margin-bottom: 1em;
+    
+}
+.float-act-btn-wrapper .options .option-wrapper{
+    background: var(--teal-1-500);
+    padding: .5em;
+    color: #f8f8ff;
+    margin-bottom: .25em;
+}
+
+
+/** ##### TODAY SITE HEALTH ##### **/
+.todaysitehealth {
+    padding: 1.75em 0 1.5em 0;
+    background: var(--white-1-100);
+}
+.todaysitehealth .head .more {
+    text-align: right;
+}
+.stats-card-1 .content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.stats-card-1 .content-wrapper .icon-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.stats-card-1 .content-wrapper .icon-container .no{
+    color: #f8f8ff;
+    display: block;
+}
+.stats-card-1 .content-wrapper .icon-container .type{
+    color: var(--white-1-100);
+    display: block;
+}
+.stats-card-1:nth-child(1){
+    background: var(--blue-1-600);
+}
+.stats-card-1:nth-child(2){
+    background: var(--red-1-600);
+}
+.stats-card-1:nth-child(3){
+    background: var(--orange-1-600);
+}
+.stats-card-1:nth-child(4){
+    background: var(--green-1-600);
+}
+
+
+/** ###### CHARTS ##### **/
+.chart {
+    width: 100%;
+}
+
+/** ###### UTILS ##### **/
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+.hcenter {
+    display: flex;
+    justify-content: center;
+}
+.vhcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
