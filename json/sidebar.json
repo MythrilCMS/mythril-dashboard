@@ -1,0 +1,233 @@
+{
+    "categories": [{
+        "id": 0,
+        "title": "General",
+        "items": [{
+            "id": 0,
+            "icon": "icon-grid",
+            "title": "Dashboard"
+        },
+            {
+                "id": 1,
+                "icon": "icon-pie-graph",
+                "title": "Statistics",
+                "description": {
+                    "title": "Information",
+                    "body": "See your complete, daily overall site status and stats. Use this data to analyze and solve site issues."
+                }
+            }]
+    },
+        {
+            "id": 1,
+            "title": "Accounts",
+            "items": [{
+                "id": 0,
+                "icon": "icon-user-add",
+                "title": "Users",
+                "description": {
+                    "title": "Information",
+                    "body": "Manage Mythril users. Add, remove, modify or restrict them with ease",
+                    "status": "Users: 0"
+                }
+            },
+                {
+                    "id": 1,
+                    "icon": "icon-users",
+                    "title": "User Roles",
+                    "description": {
+                        "title": "Information",
+                        "body": "Manage Mythril users' roles. A user role defines permissions for users to perform a group of tasks. <br><br> Add, remove, and edit it's permissions to assign it to different types of users.",
+                        "status": "User Roles: 3"
+                    }
+                },
+                {
+                    "id": 2,
+                    "icon": "icon-users",
+                    "title": "Groups & Teams",
+                    "description": {
+                        "title": "Information",
+                        "body": "Manage your groups and teams. Create announcements, poll, and chat with your teams. Work faster by setting up a workflow."
+                    }
+                }]
+        },
+        {
+            "id": 2,
+            "title": "Site Performance",
+            "items": [{
+                "id": 0,
+                "icon": "icon-grid",
+                "title": "Overview"
+            },
+                {
+                    "id": 1,
+                    "icon": "icon-alert-octagon",
+                    "title": "Issues",
+                    "description": {
+                        "title": "Information",
+                        "body": "Find and explore site performance issues and problems to fix it. The lesser issues, the better the loading speed.",
+                        "status": "Current Issues: 0"
+                    }
+                },
+                {
+                    "id": 2,
+                    "icon": "icon-logs",
+                    "title": "Logs",
+                    "description": {
+                        "title": "Information",
+                        "body": "View, record, delete site logs and its past solutions about its performance",
+                        "status": "Total Logs: 0"
+                    }
+                },
+                {
+                    "id": 3,
+                    "icon": "icon-settings",
+                    "title": "Settings"
+                }]
+        },
+        {
+            "id": 3,
+            "title": "Site Security",
+            "items": [{
+                "id": 0,
+                "icon": "icon-grid",
+                "title": "Overview"
+            },
+                {
+                    "id": 1,
+                    "icon": "icon-alert-octagon",
+                    "title": "Issues",
+                    "description2": {
+                        "title": "Information",
+                        "body": "Find and explore site security issues, problems, and vulnerabilities to fix it. The lesser issues, the better the security, and the faster you act, the lesser hackers will likely to find it",
+                        "status": "Current Issues: 0"
+                    }
+                },
+                {
+                    "id": 2,
+                    "icon": "icon-database",
+                    "title": "Database",
+                    "description2": {
+                        "title": "Information",
+                        "body": "Database and its connections has been common to exploited first by a hacker. Protect your site by setting various security mechanisms with different benefits and tradeoffs"
+                    }
+                },
+                {
+                    "id": 3,
+                    "icon": "icon-wall",
+                    "title": "DNS Firewall",
+                    "description2": {
+                        "title": "Information",
+                        "body": "DNS Firewall protect your websites by any DNS attacks. Setup and connect to the best-suiting third-party DNS firewalls with ease and control",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 4,
+                    "icon": "icon-keyboard",
+                    "title": "Spamming",
+                    "description2": {
+                        "title": "Information",
+                        "body": "This includes comments and form overloading, and continuous actions by a visitor that are repeated in a short matter of time. Stop these attacks now to stop someone whose overloading your servers.",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 5,
+                    "icon": "icon-layers",
+                    "title": "Data Handling",
+                    "description2": {
+                        "title": "Information",
+                        "body": "Implement mechanisms now to properly encrypt, decrypt and transfer different types of binary data.",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 6,
+                    "icon": "icon-mail",
+                    "title": "Emails",
+                    "description": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 7,
+                    "icon": "icon-globe",
+                    "title": "Browsers & Proxies",
+                    "description2": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 8,
+                    "icon": "icon-js",
+                    "title": "Client Javascript",
+                    "description2": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 9,
+                    "icon": "icon-server",
+                    "title": "Backend / Server",
+                    "description2": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 10,
+                    "icon": "icon-globe",
+                    "title": "HTTP & Protocols",
+                    "description2": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 11,
+                    "icon": "icon-lock",
+                    "title": "HTTPS SSL/TLS",
+                    "description2": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                },
+                {
+                    "id": 12,
+                    "icon": "icon-settings",
+                    "title": "Settings",
+                    "description2": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                }]
+        }, {
+            "id": 4,
+            "title": "MythrilCMS",
+            "items": [{
+                "id": 0,
+                "icon": "icon-info",
+                "title": "About"
+            },
+                {
+                    "id": 1,
+                    "icon": "icon-info",
+                    "title": "Licenses",
+                    "description2": {
+                        "title": "",
+                        "body": "",
+                        "status": ""
+                    }
+                }]
+        }]
+}
