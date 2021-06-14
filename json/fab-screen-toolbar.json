@@ -1,0 +1,11 @@
+{
+    "options": [{
+        "id": 0,
+        "title": "UI Settings",
+        "modal": {
+            "state": "open",
+            "id": "ui-settings-modal",
+            "label": "UI Settings"
+        }
+    }]
+}
