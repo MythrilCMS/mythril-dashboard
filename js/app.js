@@ -33,7 +33,6 @@
     var post_init_scripts = [
         finalize("js/lib/vue"),
         finalize("js/lib/chart.min"),
-        finalize("js/lib/lz-string"),
         finalize("js/fs"),
         finalize("js/components/custom-directives"),
         finalize("js/components/sidebar"),
@@ -90,7 +89,6 @@
 
         define(post_init_scripts, function(
             Vue,
-            LZString,
             $Chart,
             fs,
             Directives,
